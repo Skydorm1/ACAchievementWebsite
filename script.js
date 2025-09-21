@@ -20,7 +20,7 @@ setInterval(() => {
 }, 10000); // 60000 ms = 1 Minute
 
 async function CheckAllCheckboxes() {
-    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub"; // public URL vom Google Doc
+    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub";
 
     try {
         const response = await fetch(docUrl);
@@ -28,36 +28,36 @@ async function CheckAllCheckboxes() {
 
         const docText = await response.text();
 
-        // Entferne Zeilenumbrüche und Leerzeichen, dann split nach Komma
-        const entries = docText.replace(/\s+/g, "").split(",");
+        // Alle Einträge splitten nach Komma oder Zeilenumbruch
+        const entries = docText.split(/[\n,]+/);
 
-entries.forEach((entry, index) => {
-    entry = entry.trim();
-    if (!entry || !entry.includes(":")) return; // Skip empty/invalid
+        entries.forEach((entry, index) => {
+            entry = entry.trim();
+            if (!entry || !entry.includes(":")) return; // skip empty/invalid
 
-    const [idStr, boolStr] = entry.split(":");
-    const id = parseInt(idStr, 10);
-    if (isNaN(id)) return; // Skip invalid ID
+            const [idStr, boolStr] = entry.split(":");
+            const id = parseInt(idStr, 10);
+            if (isNaN(id)) return;
 
-    const value = boolStr.toLowerCase() === "true";
+            const value = boolStr.trim().toLowerCase() === "true";
 
-    const achievement = achievementsData.find(a => a.id === id);
-    if (achievement) {
-        achievement.isCompleted = value;
-        const cb = document.querySelector(`.toggle[data-id='${id}']`);
-        if (cb) cb.checked = value;
-    }
+            const achievement = achievementsData.find(a => a.id === id);
+            if (achievement) {
+                achievement.isCompleted = value;
+                const cb = document.querySelector(`.toggle[data-id='${id}']`);
+                if (cb) cb.checked = value;
+            }
 
-    if (index < 10) {
-        console.log(`ID: ${id}, isCompleted: ${value}`);
-    }
-});
-
+            if (index < 10) {
+                console.log(`ID: ${id}, isCompleted: ${value}`);
+            }
+        });
 
     } catch (error) {
         console.error("Fehler beim Verarbeiten des Docs:", error);
     }
 }
+
 
 
 
