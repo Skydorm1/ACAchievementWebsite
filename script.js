@@ -17,13 +17,13 @@ loadAchievementsFromXMLRepo();
 // Rufe die Funktion jede Minute (60000 ms) erneut auf
 setInterval(() => {
 		CheckAllCheckboxes();
-}, 10000); // 60000 ms = 1 Minute
+}, 6000); // 60000 ms = 1 Minute
 
 async function CheckAllCheckboxes() {
     const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub";
 
     try {
-        const response = await fetch(docUrl);
+        const response = await fetch(docUrl + `?t=${Date.now()}`, { cache: "no-store" });
         if (!response.ok) throw new Error("Fehler beim Laden des Docs");
 
         const htmlText = await response.text(); // <-- wichtig
