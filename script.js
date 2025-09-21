@@ -36,22 +36,23 @@ async function CheckAllCheckboxes() {
             .filter(line => line.includes(":"));
 
         // Optional: hier kannst du achievementsData abgleichen
-        docLines.forEach(line => {
-            const [idStr, boolStr] = line.split(":");
-            const id = parseInt(idStr, 10);
-            const value = boolStr.toLowerCase() === "true";
-            const achievement = achievementsData.find(a => a.id === id);
-            if (achievement) {
-                achievement.isCompleted = value; // updaten
-                const cb = document.querySelector(`.toggle[data-id='${id}']`);
-                if (cb) cb.checked = value;
-            }
-			
-			// Erste 10 in der Konsole ausgeben
-            if (index < 10) {
-                console.log(`ID: ${id}, isCompleted: ${value}`);
-            }
-        });
+        docLines.forEach((line, index) => { // index hier hinzufügen
+    const [idStr, boolStr] = line.split(":");
+    const id = parseInt(idStr, 10);
+    const value = boolStr.toLowerCase() === "true";
+
+    const achievement = achievementsData.find(a => a.id === id);
+    if (achievement) {
+        achievement.isCompleted = value;
+        const cb = document.querySelector(`.toggle[data-id='${id}']`);
+        if (cb) cb.checked = value;
+    }
+
+    if (index < 10) {
+        console.log(`ID: ${id}, isCompleted: ${value}`);
+    }
+});
+
 
     } catch (error) {
         console.error("Fehler beim Verarbeiten des Docs:", error);
