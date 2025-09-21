@@ -29,11 +29,11 @@ async function loadAchievementsFromGoogleDoc() {
 
         const htmlText = await response.text();
 
-        // Google Docs gibt HTML, wir müssen den Inhalt extrahieren
+        // HTML in temporäres Element einfügen
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = htmlText;
 
-        // Alle <p> oder <span> Elemente zusammenfügen
+        // Alle <p> und <span> Elemente zusammenfügen, als Text
         const docText = Array.from(tempDiv.querySelectorAll("p, span"))
                              .map(el => el.textContent)
                              .join("\n");
@@ -54,17 +54,15 @@ async function loadAchievementsFromGoogleDoc() {
             isFollowing: a.getElementsByTagName("isFollowing")[0].textContent === "TRUE"
         }));
 
-        
         filterByKingdom();
         updateGreenscreenData();
-		CheckAllCheckboxes();
+        CheckAllCheckboxes(); // optional, damit Checkboxen sofort angezeigt werden
 
     } catch (error) {
-        console.error('Fehler beim Laden der Achievements von GitHub:', error);
+        console.error('Fehler beim Laden der Achievements vom Google Doc:', error);
         alert('Die Achievements konnten nicht geladen werden.');
     }
 }
-
 
 
 // Funktion zum Laden von Erfolgen aus einer XML-Datei direkt von GitHub
