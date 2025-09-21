@@ -9,14 +9,55 @@ function disableToggle(){
 
 
 let achievementsData = [];
+let finishedRenderingList;
 
 // Lade einmal beim Start
 loadAchievementsFromXMLRepo();
 
 // Rufe die Funktion jede Minute (60000 ms) erneut auf
 setInterval(() => {
-    loadAchievementsFromXMLRepo();
-}, 60000*6); // 60000 ms = 1 Minute
+		CheckAllCheckboxes();
+}, 10000); // 60000 ms = 1 Minute
+
+async function CheckAllCheckboxes() {
+	if (!finishedRenderingList) return;
+	
+    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub"; // public URL
+
+    try {
+        const response = await fetch(docUrl);
+        if (!response.ok) throw new Error("Fehler beim Laden des Docs");
+
+        const docText = await response.text();
+
+		// jede Zeile trimmen und filtern
+		const docLines = docText.split("\n")
+            .map(line => line.trim())
+            .filter(line => line.includes(":"));
+
+        // Optional: hier kannst du achievementsData abgleichen
+        docLines.forEach(line => {
+            const [idStr, boolStr] = line.split(":");
+            const id = parseInt(idStr, 10);
+            const value = boolStr.toLowerCase() === "true";
+            const achievement = achievementsData.find(a => a.id === id);
+            if (achievement) {
+                achievement.isCompleted = value; // updaten
+                const cb = document.querySelector(`.toggle[data-id='${id}']`);
+                if (cb) cb.checked = value;
+            }
+			
+			// Erste 10 in der Konsole ausgeben
+            if (index < 10) {
+                console.log(`ID: ${id}, isCompleted: ${value}`);
+            }
+        });
+
+    } catch (error) {
+        console.error("Fehler beim Verarbeiten des Docs:", error);
+    }
+}
+
 
 // Funktion zum Laden von Erfolgen aus einer XML-Datei direkt von GitHub
 async function loadAchievementsFromXMLRepo() {
@@ -44,7 +85,6 @@ async function loadAchievementsFromXMLRepo() {
 
         filterByKingdom();
         updateGreenscreenData();
-		CheckAllCheckboxes();
 
     } catch (error) {
         console.error('Fehler beim Laden der Achievements von GitHub:', error);
@@ -52,7 +92,7 @@ async function loadAchievementsFromXMLRepo() {
     }
 }
 
-function CheckAllCheckboxes() {
+function CheckAllCheckboxers() {
     const checkboxes = document.querySelectorAll('.toggle');
 
     checkboxes.forEach((cb, index) => {
@@ -285,6 +325,7 @@ function renderAchievements(achievements) {
         `;
         achievementList.appendChild(item);
     });
+	finishedRenderingList = true;
 }
 
 // Funktion für die Sortier-Listener
