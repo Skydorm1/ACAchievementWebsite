@@ -95,7 +95,7 @@ setInterval(() => {
 
 // Funktion zum Laden von Erfolgen aus einer XML-Datei direkt von GitHub
 async function loadAchievementsFromXMLRepo() {
-    const url = 'https://raw.githubusercontent.com/Sky/WebsiteReader/main/achievement.xml'; // Raw-URL deiner XML im Repo
+    const url = 'https://raw.githubusercontent.com/Skydorm1/ACAchievementWebsite/main/data/ACAchievementsXML%20-%20German.xml'; // Raw-URL deiner XML im Repo
 
     try {
         const response = await fetch(url);
