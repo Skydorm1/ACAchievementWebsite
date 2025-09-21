@@ -24,7 +24,7 @@ async function CheckAllCheckboxes() {
 	
 	console.log(`Atualisierung der Checkboxen jetzt`);
 	
-    const docUrl = "https://raw.githubusercontent.com/Skydorm1/ACAchievements2/refs/heads/main/ACAchievementListCheck.txt";
+    const docUrl = "https://raw.githubusercontent.com/timiquickcutproductions/ACNH-Platin/refs/heads/main/ACAchievementListCheck.txt";
 
     try {
         // Fetch mit Cache-Bypass (damit du nicht alte Versionen bekommst)
