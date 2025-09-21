@@ -13,15 +13,52 @@ let finishedRenderingList;
 
 // Lade einmal beim Start
 loadAchievementsFromXMLRepo();
-/*
+
 // Rufe die Funktion jede Minute (60000 ms) erneut auf
 setInterval(() => {
 		CheckAllCheckboxes();
-}, 6000); // 60000 ms = 1 Minute*/
+}, 60000*7); // 60000 ms = 1 Minute
 
 async function CheckAllCheckboxes() {
-    
+	if(!finishedRenderingList) return;
+	
+	console.log(`Atualisierung der Checkboxen jetzt`);
+	
+    const docUrl = "https://raw.githubusercontent.com/Skydorm1/ACAchievements2/refs/heads/main/ACAchievementListCheck.txt";
+
+    try {
+        // Fetch mit Cache-Bypass (damit du nicht alte Versionen bekommst)
+        const response = await fetch(docUrl + `?t=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error("Fehler beim Laden der Datei");
+
+        const text = await response.text();
+
+        // Jede Zeile parsen
+        const lines = text.split("\n").map(line => line.trim()).filter(Boolean);
+
+        lines.forEach((line, index) => {
+            if (!line.includes(":")) return;
+
+            const [idStr, boolStr] = line.split(":");
+            const id = parseInt(idStr, 10);
+            if (isNaN(id)) return;
+
+            const value = boolStr.trim().toLowerCase() === "true";
+
+            // achievement in deiner lokalen Liste aktualisieren
+            const achievement = achievementsData.find(a => a.id === id);
+            if (achievement) {
+                achievement.isCompleted = value;
+                const cb = document.querySelector(`.toggle[data-id='${id}']`);
+                if (cb) cb.checked = value;
+            }
+        });
+
+    } catch (error) {
+        console.error("Fehler beim Verarbeiten der Datei:", error);
+    }
 }
+
 
 
 
@@ -296,6 +333,7 @@ function renderAchievements(achievements) {
         achievementList.appendChild(item);
     });
 	finishedRenderingList = true;
+	CheckAllCheckboxes();
 }
 
 // Funktion für die Sortier-Listener
