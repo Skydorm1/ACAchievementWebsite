@@ -186,7 +186,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Nie allein</Achievementname>
 		<Description>Designe ein UE-Tshirt (Muster Erstellen, können dann auch andere downloaden)</Description>
-		<isCompleted>FALSE</isCompleted>
+		<isCompleted>TRUE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -1683,4 +1683,5 @@
 		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
+
 </ACAchievements>
