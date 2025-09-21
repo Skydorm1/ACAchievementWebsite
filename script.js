@@ -20,9 +20,9 @@ setInterval(() => {
 }, 10000); // 60000 ms = 1 Minute
 
 async function CheckAllCheckboxes() {
-	if (!finishedRenderingList) return;
-	
-    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub"; // public URL
+    if (!finishedRenderingList) return; // nur ausführen, wenn die Liste fertig gerendert ist
+
+    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub";
 
     try {
         const response = await fetch(docUrl);
@@ -30,34 +30,40 @@ async function CheckAllCheckboxes() {
 
         const docText = await response.text();
 
-		// jede Zeile trimmen und filtern
-		const docLines = docText.split("\n")
-            .map(line => line.trim())
+        // HTML in temporäres Element einfügen
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = docText;
+
+        // Alle <p> oder <span> Elemente holen und nur den Text
+        const docLines = Array.from(tempDiv.querySelectorAll("p span"))
+            .map(el => el.textContent.trim())
             .filter(line => line.includes(":"));
 
-        // Optional: hier kannst du achievementsData abgleichen
-        docLines.forEach((line, index) => { // index hier hinzufügen
-    const [idStr, boolStr] = line.split(":");
-    const id = parseInt(idStr, 10);
-    const value = boolStr.toLowerCase() === "true";
+        // Über alle Zeilen iterieren und achievements updaten
+        docLines.forEach((line, index) => {
+            const [idStr, boolStr] = line.split(":");
+            const id = parseInt(idStr, 10);
+            const value = boolStr.toLowerCase() === "true";
 
-    const achievement = achievementsData.find(a => a.id === id);
-    if (achievement) {
-        achievement.isCompleted = value;
-        const cb = document.querySelector(`.toggle[data-id='${id}']`);
-        if (cb) cb.checked = value;
-    }
+            const achievement = achievementsData.find(a => a.id === id);
+            if (achievement) {
+                achievement.isCompleted = value;
 
-    if (index < 10) {
-        console.log(`ID: ${id}, isCompleted: ${value}`);
-    }
-});
+                const cb = document.querySelector(`.toggle[data-id='${id}']`);
+                if (cb) cb.checked = value;
+            }
 
+            // Die ersten 10 IDs in der Konsole ausgeben
+            if (index < 10) {
+                console.log(`ID: ${id}, isCompleted: ${value}`);
+            }
+        });
 
     } catch (error) {
         console.error("Fehler beim Verarbeiten des Docs:", error);
     }
 }
+
 
 
 // Funktion zum Laden von Erfolgen aus einer XML-Datei direkt von GitHub
