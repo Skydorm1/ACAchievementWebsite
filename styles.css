@@ -5,298 +5,198 @@ body {
     background: transparent;
 }
 
-.Downloadheader{
-	font-size: 15px;
-	cursor: pointer;
-	width: 50px;
-	display: flex;
-    justify-content: flex-start;
-	margin-left: 5px;
-		position:absolute;
-		margin-top: 50px;
-			text-shadow: 1px 2px #000000;
-}
-.Downloadknopf{
-	cursor: pointer;
-	width: 50px;
-	display: flex;
-    justify-content: flex-start;
-	margin-left: 18px;
-		position:absolute;
-}
-
-.Removeheader{
-	font-size: 15px;
-	cursor: pointer;
-	width: 50px;
-	display: flex;
-    justify-content: flex-start;
-	line-height: 20px;
-	margin-left: 98px;
-		position:absolute;
-		margin-top: 55px;
-			text-shadow: 1px 2px #000000;
-}
-.Deleteknopf{
-	position:absolute;
-	cursor: pointer;
-	width: 50px;
-	display: flex;
-    justify-content: flex-start;
-	margin-left: 100px;
-}
-.file-upload-container {	
-	font-size: 15px;
-	line-height: 23px;
-position:absolute;
-	cursor: pointer;
-	width: 50px;
-	display: flex;
-    justify-content: flex-start;
-	margin-left: 174px;
-}
-
-.file-upload-label {
-    display: inline-block;  /* Macht das Label klickbar */
-    cursor: pointer;  /* Zeigt den Mauszeiger an, dass es klickbar ist */
-		text-shadow: 1px 2px #000000;
-}
-
-.file-upload-icon {
-    width: 50px;  /* Größe des Icons anpassen */
-    height: 50px;  /* Größe des Icons anpassen */
-}
-
-
-
-
-
-
-
-
-
+/* Hintergrundbild dynamisch */
 .background {
     position: fixed;
-    top: -15px;
-    left: -15px;
-    width: 105vw;
-    height: 105vh;
-    background-size: cover;
-    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     z-index: -1;
 }
 
+/* Fonts */
 @font-face {
     font-family: 'FOT-RodinBokutoh Pro EB';
     src: url('fonts/FOT-RodinBokutoh Pro EB.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 @font-face {
     font-family: 'New Super Mario Font U';
     src: url('fonts/New Super Mario Font U.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 @font-face {
     font-family: 'Super Mario 64';
     src: url('fonts/Super Mario 64.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 @font-face {
     font-family: 'SuperMario256';
     src: url('fonts/SuperMario256.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
+/* Header */
 header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     background-color: rgba(244, 241, 228, 1);
-    color: #fff;
-	text-shadow: 1px 2px #000000;
+    text-shadow: 1px 2px #000000;
 }
 
 .header-icon {
-    width: 360px;
-    margin-right: 25px;
-	cursor: pointer;
+    width: clamp(150px, 25vw, 360px);
+    margin-right: 15px;
+    cursor: pointer;
 }
 
+/* Navigation */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
 nav li {
-    margin: 0 10px;
+    flex: 1 1 auto;
+    min-width: 90px;
+    text-align: center;
 }
 
 nav a {
     color: #cba260;
     text-decoration: none;
-    text-align: center;
-	font-size: 19px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav a img {
-    display: block;
-    width: 70px;
-    margin: 0 auto 5px;
+    width: clamp(40px, 6vw, 70px);
+    height: auto;
+    margin-bottom: 5px;
 }
 
+/* Kingdom Header */
 .kingdom-header {
     text-align: center;
-    margin: 20px 0;
-		text-shadow: 1px 4px #000000;
-	color: white;
+    margin: 20px 10px;
+    color: white;
+    text-shadow: 1px 4px #000000;
 }
 
 .kingdom-logo {
-    width: 100px;
-    display: block;
+    width: clamp(60px, 15vw, 120px);
     margin: 0 auto;
+    display: block;
 }
 
-
-
+/* Sort Options */
 .sort-options {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
-	margin-left: 110px;
-	text-shadow: 1px 2px #000000;
-	color: white;
-}
-
-.sort-options label {
-    margin-right: 15px;
-	font-size: 20px;
-}
-
-.sort-options select {
-    padding: 3px;
-	margin-right: 60px;
-}
-
-#achievement-list {
-    width: 90%;
-    max-width: 1475px;
-    max-height: 50vh; /* Begrenzung auf 80% der Bildschirmhöhe */
-    overflow-y: auto; /* Scrollen aktivieren */
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.25);
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    border-radius: 8px;
-    color: #ffffff;
+    gap: 10px 20px;
+    margin: 20px auto;
+    color: white;
     text-shadow: 1px 2px #000000;
 }
 
-/* Stil für die Einträge */
-.achievement-item {
-    display: flex;
-    align-items: flex-start; /* Startet Inhalte oben, falls Text umbrochen wird */
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    flex-wrap: wrap; /* Ermöglicht Umbruch innerhalb des Eintrags */
-}
-.achievement-item a{
-	color: #ffffff;
-		cursor: not-allowed;
+.sort-options label {
+    font-size: 1rem;
 }
 
+.sort-options select {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+/* Achievement List */
+#achievement-list {
+    width: 95%;
+    max-width: 1600px; /* mehr Platz auf großen Bildschirmen */
+    max-height: 65vh;
+    overflow-y: auto;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    color: #fff;
+    text-shadow: 1px 2px #000;
+}
+
+/* Achievement Items */
+.achievement-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
 .achievement-item:last-child {
     border-bottom: none;
 }
 
-/* Feste Breiten für die einzelnen Spalten */
 .achievement-id,
 .achievement-category,
 .achievement-difficulty,
 .achievement-name,
 .achievement-description {
-    width: 150px; /* Feste Breite */
-    max-width: 150px; /* Maximale Breite vor Zeilenumbruch */
-    word-wrap: break-word; /* Zeilenumbruch bei langen Wörtern */
-    white-space: normal; /* Text darf in die nächste Zeile brechen */
+    flex: 1 1 150px;
+    min-width: 120px;
     padding: 5px;
     box-sizing: border-box;
-	margin-right: 25px;
-	margin-left: 25px;
+    word-wrap: break-word;
 }
 
+.achievement-name {
+    border-left: 6px solid #c6c670;
+}
 .achievement-description {
-	margin-right: 30px;
-    width: 270px; /* Feste Breite */
-    max-width: 270px; /* Maximale Breite vor Zeilenumbruch */
+    border-left: 6px solid #37a1c6;
 }
 
-.achievement-name{
-	color: #fff;
-	border-left: 6px solid #c6c670;
-    width: 200px; /* Feste Breite */
-    max-width: 200px; /* Maximale Breite vor Zeilenumbruch */
+/* Icon Größen */
+.achievement-id img,
+.achievement-category img {
+    width: clamp(50px, 10vw, 80px);
+    height: auto;
 }
-.achievement-description{
-	color: #fff;
-	border-left: 6px solid #37a1c6;
-}
-
-.achievement-category{
-	text-align: center;
-	align-items: center;
-	margin-left: -10px;
-}
-
-
-.achievement-id img{
-    width: 80px; /* Adjust the size of icons here */
-    height: 80px; /* Ensure width and height are the same for a square icon */
-    margin-right: 80px; /* Space between icon and text */
-    vertical-align: middle; /* Align icon with text */
-}
-
 .achievement-difficulty img {
-    width: 50px; /* Adjust the size of icons here */
-    height: 50px; /* Ensure width and height are the same for a square icon */
-    margin-right: 8px; /* Space between icon and text */
-    vertical-align: middle; /* Align icon with text */
+    width: clamp(30px, 7vw, 50px);
+    height: auto;
 }
 
-.achievement-category img{
-    width: 80px; /* Adjust the size of icons here */
-    height: 80px; /* Ensure width and height are the same for a square icon */
-    margin-right: 105px; /* Space between icon and text */
-	margin-left: 30px; /* Space between icon and text */  
-	align-items: center;
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .header-icon {
+        width: 40vw;
+    }
+    nav a img {
+        width: 40px;
+    }
+    .sort-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    #achievement-list {
+        max-height: none;
+    }
 }
 
-/* Zusätzlicher Stil für Labels und Checkboxen */
-.toggle,
-.toggle2,
-.toggle3 {
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
-    margin-right: 20px;
+@media (max-width: 480px) {
+    nav li {
+        flex: 1 1 45%;
+    }
+    .achievement-item {
+        flex-direction: column;
+    }
 }
-
-.toggle3,
-.toggle{
-cursor: pointer;
-}
-
-.toggle2 {
-	cursor: not-allowed;
-}
-
-
-
