@@ -43,7 +43,6 @@ async function loadAchievementsFromXMLRepo() {
         }));
 
         filterByKingdom();
-        saveToIndexedDB(); // Optional: speichert lokal
         updateGreenscreenData();
 
     } catch (error) {
@@ -60,72 +59,6 @@ function updateGreenscreenData() {
         total: totalAchievementsAC,
         completed: completedAchievementsAC
     }));
-}
-
-
-
-
-function toggleIsCompleted(id, isChecked) {
-    // Suchen des Achievement in achievementsData
-    const achievement = achievementsData.find(a => a.id === id);
-    if (achievement) {
-        // Änderung im achievementsData Array vornehmen
-        achievement.isCompleted = isChecked;
-
-		const achievementElement = document.querySelector(`[data-id="${id}"]`).closest('.achievement-item');
-        const imageElement = achievementElement.querySelector('.achievement-id img');
-        imageElement.src = getAchievementIcon(id, isChecked); // Bild neu setzen
-        imageElement.onerror = function() {
-            this.src = 'achievementicon/placeholder.png'; // Fallback-Bild, falls das Bild nicht geladen werden kann
-        };
-		
-        // Speichern der geänderten Daten in IndexedDB
-        saveToIndexedDB();
-		
-		if(isChecked == true){
-		CommunicationGreenscreenComplete(achievement);
-		CommunicationGreenscreenLastDone(achievement);
-		
-		}
-		updateGreenscreenData();
-		
-    } else {
-        alert("Achievement not found! What the fuck did you toggle");
-    }
-}
-
-function toggleIsFollowing(id, isChecked) {
-    // Suchen des Achievement in achievementsData
-    const achievement = achievementsData.find(a => a.id === id);
-    if (achievement) {
-        // Änderung im achievementsData Array vornehmen
-		
-		if (isChecked) {
-            // Setze den "isFollowing"-Status für alle anderen auf 'false'
-            achievementsData.forEach(a => {
-                if (a.id !== id) {
-                    a.isFollowing = false; // Alle anderen auf 'false' setzen
-                }
-            });
-        }
-		
-        achievement.isFollowing = isChecked;
-		
-        // Speichern der geänderten Daten in IndexedDB
-        saveToIndexedDB();
-		
-		document.querySelectorAll('.toggle3').forEach(checkbox => {
-            const checkboxId = parseInt(checkbox.dataset.id, 10);
-            const relatedAchievement = achievementsData.find(a => a.id === checkboxId);
-            checkbox.checked = relatedAchievement?.isFollowing || false;
-        });
-		
-		if(isChecked == true){
-		CommunicationGreenscreenFollowing(achievement)
-		}
-    } else {
-        alert("Achievement not found! What the fuck did you toggle");
-    }
 }
 
 function CommunicationGreenscreenLastDone(achievement){
@@ -202,35 +135,6 @@ function createXMLDocument() {
     });
 
     return xmlDoc;
-}
-
-function saveToIndexedDB() {
-    const request = indexedDB.open("AchievementsDB", 1);
-
-    request.onupgradeneeded = function(event) {
-        const db = event.target.result;
-        if (!db.objectStoreNames.contains("achievements")) {
-            db.createObjectStore("achievements", { keyPath: "id" });
-        }
-    };
-
-    request.onsuccess = function(event) {
-        const db = event.target.result;
-        const transaction = db.transaction("achievements", "readwrite");
-        const store = transaction.objectStore("achievements");
-
-        achievementsData.forEach(achievement => {
-            store.put(achievement); // Speichern jedes Erfolges in der Datenbank
-        });
-
-        transaction.oncomplete = function() {
-            console.log("Achievements in IndexedDB gespeichert.");
-        };
-    };
-
-    request.onerror = function(event) {
-        console.log("Fehler beim Speichern der Erfolge in IndexedDB:", event);
-    };
 }
 
 function filterByKingdom() {
@@ -349,27 +253,17 @@ function renderAchievements(achievements) {
             <div class="achievement-difficulty"><img src="${getStarImage(achievement.difficulty)}" alt="Difficulty Icon" /> ${achievement.difficulty}</div>
             <div class="achievement-name">${achievement.name}</div>
             <div class="achievement-description">${achievement.description}</div>
-            <label>
-                Completed:
-                <input type="checkbox" class="toggle" ${achievement.isCompleted ? "checked" : ""} data-id="${achievement.id}" onchange="toggleIsCompleted(${achievement.id}, this.checked)">
-            </label>
-			<label>
-                Follow:
-                <input type="checkbox" class="toggle3" ${achievement.isFollowing ? "checked" : ""} data-id="${achievement.id}" onchange="toggleIsFollowing(${achievement.id}, this.checked)">
-            </label>
+<label>
+    Completed:
+    <input type="checkbox" class="toggle" ${achievement.isCompleted ? "checked" : ""} data-id="${achievement.id}" disabled>
+</label>
+<label>
+    Follow:
+    <input type="checkbox" class="toggle3" ${achievement.isFollowing ? "checked" : ""} data-id="${achievement.id}" disabled>
+</label>
+
         `;
         achievementList.appendChild(item);
-    });
-	document.querySelectorAll('.toggle').forEach(cb => {
-        const achievement = achievementsData.find(a => a.id === parseInt(cb.dataset.id, 10));
-        if (achievement) cb.checked = achievement.isCompleted;
-        cb.disabled = true; // falls du sie deaktivieren willst
-    });
-
-    document.querySelectorAll('.toggle3').forEach(cb => {
-        const achievement = achievementsData.find(a => a.id === parseInt(cb.dataset.id, 10));
-        if (achievement) cb.checked = achievement.isFollowing;
-        cb.disabled = true; // falls du sie deaktivieren willst
     });
 }
 
