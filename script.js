@@ -11,62 +11,15 @@ function disableToggle(){
 let achievementsData = [];
 
 // Lade einmal beim Start
-//loadAchievementsFromXMLRepo();
-loadAchievementsFromGoogleDoc();
+loadAchievementsFromXMLRepo();
 
 // Rufe die Funktion jede Minute (60000 ms) erneut auf
 setInterval(() => {
-    //loadAchievementsFromXMLRepo();
-	loadAchievementsFromGoogleDoc();
+    loadAchievementsFromXMLRepo();
 }, 10000); // 60000 ms = 1 Minute
 
-async function loadAchievementsFromGoogleDoc() {
-    const url = "https://docs.google.com/document/d/e/2PACX-1vTW1cYQeD4LOVmae7JpGMP6aV_BCbcizQ8WFwp35PGrrO3-_IC5Q3qnyh_MCwfqxVKSR6vvOlWsKiOa/pub";
-
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("Fehler beim Laden des Google Docs");
-
-        const htmlText = await response.text();
-
-        // HTML in temporäres Element einfügen
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = htmlText;
-
-        // Alle <p> und <span> Elemente zusammenfügen, als Text
-        const docText = Array.from(tempDiv.querySelectorAll("p, span"))
-                             .map(el => el.textContent)
-                             .join("\n");
-
-        // XML parsen
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(docText, "application/xml");
-
-        const achievements = xml.getElementsByTagName("Achievement");
-
-        achievementsData = Array.from(achievements).map(a => ({
-            id: parseInt(a.getElementsByTagName("ID")[0].textContent),
-            category: a.getElementsByTagName("Category")[0].textContent,
-            difficulty: a.getElementsByTagName("Difficulty")[0].textContent.toLowerCase(),
-            name: a.getElementsByTagName("Achievementname")[0].textContent,
-            description: a.getElementsByTagName("Description")[0].textContent,
-            isCompleted: a.getElementsByTagName("isCompleted")[0].textContent === "TRUE",
-            isFollowing: a.getElementsByTagName("isFollowing")[0].textContent === "TRUE"
-        }));
-
-        filterByKingdom();
-        updateGreenscreenData();
-        CheckAllCheckboxes(); // optional, damit Checkboxen sofort angezeigt werden
-
-    } catch (error) {
-        console.error('Fehler beim Laden der Achievements vom Google Doc:', error);
-        alert('Die Achievements konnten nicht geladen werden.');
-    }
-}
-
-
 // Funktion zum Laden von Erfolgen aus einer XML-Datei direkt von GitHub
-/*async function loadAchievementsFromXMLRepo() {
+async function loadAchievementsFromXMLRepo() {
     const url = 'https://raw.githubusercontent.com/Skydorm1/ACAchievementWebsite/main/data/ACAchievementsXML%20-%20German.xml'; // Raw-URL deiner XML im Repo
 
     try {
@@ -97,7 +50,7 @@ async function loadAchievementsFromGoogleDoc() {
         console.error('Fehler beim Laden der Achievements von GitHub:', error);
         alert('Die Achievements konnten nicht geladen werden.');
     }
-}*/
+}
 
 function CheckAllCheckboxes() {
     const checkboxes = document.querySelectorAll('.toggle');
