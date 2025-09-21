@@ -11,60 +11,12 @@ function disableToggle(){
 let achievementsData = [];
 
 // Lade einmal beim Start
-//loadAchievementsFromXMLRepo();
-loadAchievementsFromGist();
+loadAchievementsFromXMLRepo();
 
 // Rufe die Funktion jede Minute (60000 ms) erneut auf
 setInterval(() => {
-    //loadAchievementsFromXMLRepo();
-	loadAchievementsFromGist();
-}, 6000); // 60000 ms = 1 Minute
-
-async function loadAchievementsFromGist() {
-    const gistId = "eb319ba0c431d3a033ce578eb4117981"; // Deine Gist-ID
-    const fileName = "gistfile1.txt";     // Name der Datei in der Gist
-
-    try {
-        // 1. API abrufen, um den aktuellen raw_url zu bekommen
-        const gistResponse = await fetch(`https://api.github.com/gists/${gistId}?t=${Date.now()}`, { cache: "no-store" });
-        if (!gistResponse.ok) throw new Error("Fehler beim Abrufen des Gist");
-
-        const gistData = await gistResponse.json();
-        const rawUrl = gistData.files[fileName].raw_url;
-
-        // 2. Raw-Content abrufen
-        const rawResponse = await fetch(rawUrl);
-        if (!rawResponse.ok) throw new Error("Fehler beim Laden der XML-Datei vom Gist");
-
-        const xmlText = await rawResponse.text();
-
-        // 3. XML parsen
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(xmlText, "application/xml");
-        const achievements = xml.getElementsByTagName("Achievement");
-
-        // 4. achievementsData füllen
-        achievementsData = Array.from(achievements).map(achievement => ({
-            category: achievement.getElementsByTagName("Category")[0].textContent,
-            difficulty: achievement.getElementsByTagName("Difficulty")[0].textContent.toLowerCase(),
-            id: parseInt(achievement.getElementsByTagName("ID")[0].textContent),
-            name: achievement.getElementsByTagName("Achievementname")[0].textContent,
-            description: achievement.getElementsByTagName("Description")[0].textContent,
-            isCompleted: achievement.getElementsByTagName("isCompleted")[0].textContent === "TRUE",
-            isFollowing: achievement.getElementsByTagName("isFollowing")[0].textContent === "TRUE"
-        }));
-
-        // 5. Weiterverarbeitung wie gewohnt
-        filterByKingdom();
-        updateGreenscreenData();
-        CheckAllCheckboxes();
-
-    } catch (error) {
-        console.error("Fehler beim Laden der Achievements vom Gist:", error);
-        alert("Die Achievements konnten nicht geladen werden.");
-    }
-}
-
+    loadAchievementsFromXMLRepo();
+}, 60000*6); // 60000 ms = 1 Minute
 
 // Funktion zum Laden von Erfolgen aus einer XML-Datei direkt von GitHub
 async function loadAchievementsFromXMLRepo() {
