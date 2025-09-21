@@ -44,12 +44,32 @@ async function loadAchievementsFromXMLRepo() {
 
         filterByKingdom();
         updateGreenscreenData();
+		CheckAllCheckboxes();
 
     } catch (error) {
         console.error('Fehler beim Laden der Achievements von GitHub:', error);
         alert('Die Achievements konnten nicht geladen werden.');
     }
 }
+
+function CheckAllCheckboxes() {
+    const checkboxes = document.querySelectorAll('.toggle');
+
+    checkboxes.forEach((cb, index) => {
+        const achievementId = parseInt(cb.dataset.id, 10);
+        const achievement = achievementsData.find(a => a.id === achievementId);
+
+        if (achievement) {
+            cb.checked = achievement.isCompleted;
+            
+            // Die ersten 10 Einträge in der Konsole ausgeben
+            if (index < 10) {
+                console.log(`ID: ${achievement.id}, isCompleted: ${achievement.isCompleted}`);
+            }
+        }
+    });
+}
+
 
 function updateGreenscreenData() {
     const totalAchievementsAC = achievementsData.length; // Gesamtzahl der Achievements
