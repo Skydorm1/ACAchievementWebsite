@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ACAchievements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Achievement>
+		<ID>1</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>*Prrt Prrt* Nook ruft an!</Achievementname>
+		<Description>Schließe das "Tutorial" ab und erhalte die erste Rechnung von Tom Nook</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>2</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ein Neuanfang</Achievementname>
+		<Description>Zahle dein Grundstück zum ersten Mal ab. Jetzt kann es losgehen!</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>3</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Es wird besser</Achievementname>
+		<Description>Erhalte die 2 Sterne für deine Insel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>4</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>K.K. Tourstopp </Achievementname>
+		<Description>Erhalte 3 Sterne Bewertung für deine Insel und hör dir das erste Konzert von K.K. an</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>5</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Fast da!</Achievementname>
+		<Description>Erhalte die 4 Sterne Bewertung für deine Insel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>6</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Besser gehts nicht!</Achievementname>
+		<Description>Erhalte die 5 Sterne Bewertung für deine Insel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>7</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Schuldenfrei!</Achievementname>
+		<Description>Upgrade dein Haus und bezahle die letzten Schulden</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>8</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Huebsch eingerichtet</Achievementname>
+		<Description>Erhalte den besten Rang für dein Haus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>9</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Yay, Geld ausgeben</Achievementname>
+		<Description>Baue den Laden von Nepp und Schlepp</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>10</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Yay, MEHR Geld ausgeben!!!</Achievementname>
+		<Description>Erweitere den Shop</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>11</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Fashionista</Achievementname>
+		<Description>Baue die Schneiderei</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>12</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Es heißt EUGEN!</Achievementname>
+		<Description>Baue das Museum</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>13</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Die neue Sekretärin</Achievementname>
+		<Description>Hol Melinda auf die Insel und baue das Rathaus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>14</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Mieser Camper</Achievementname>
+		<Description>Hole einen Bewohner vom Capmingplatz auf deine Insel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>15</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Taubenmilch </Achievementname>
+		<Description>Baue das Café und Trinke einen Kaffee </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>16</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Komm auf die Insel</Achievementname>
+		<Description>Hole einen Bewohner von einer Meileninsel zu dir</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>17</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Volle insel</Achievementname>
+		<Description>Erreiche die maximale Bewohner anzahl</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>18</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Nationalhymne</Achievementname>
+		<Description>Passe die Inselmelodie an</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>19</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Nationalflagge</Achievementname>
+		<Description>Passe die Inselflagge an</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>20</ID>
+		<Category>InselProgress</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Inseldiktator</Achievementname>
+		<Description>Passe die Inselverodnung an</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>21</ID>
+		<Category>Mode</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Nie allein</Achievementname>
+		<Description>Designe ein UE-Tshirt (Muster Erstellen, können dann auch andere downloaden)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>22</ID>
+		<Category>Mode</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Haidresser</Achievementname>
+		<Description>Schalte jede Frisur frei</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>23</ID>
+		<Category>Mode</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Its a me </Achievementname>
+		<Description>Kleide dich wie Mario</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>24</ID>
+		<Category>Mode</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>GNTM nur besser </Achievementname>
+		<Description>Nehme an Minnas Modetest teil</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>25</ID>
+		<Category>Mode</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Legenden Status</Achievementname>
+		<Description>Trage folgende Kombi: Latschen/Bademantel/ Fischerhut</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>26</ID>
+		<Category>Mode</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Sweet Schild of mine</Achievementname>
+		<Description>Erstelle ein Design und gestalte ein Schild damit um.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>27</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Jetzt gehts rund</Achievementname>
+		<Description>Kaufe den Werkzeugring im NookPortal</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>28</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ein ehrwürdiges Upgrade</Achievementname>
+		<Description>Kaufe die "Alltagswerkzeuge A-Z" Bastellanleitung im NookPortal</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>29</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>"What's in the box?"</Achievementname>
+		<Description>Verkaufe etwas an Nooks Laden, indem du die Verkaufskiste benutzt.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>30</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Shoppingexperte</Achievementname>
+		<Description>Schalte die App "Nook Shopping" auf dem NookPhone frei.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>31</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Obstmilliadär</Achievementname>
+		<Description>Verkaufe fremdes Obst bei Nook und erhalte mehr Geld </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>32</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Und wie viel ist das? 8K!</Achievementname>
+		<Description>Verkaufe mindestens eine Vogelspinne bei Nepp und Schlepp</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>33</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ralf Schnäppchenmacher</Achievementname>
+		<Description>Verkaufe das Angebot des Tages bei Nooks Laden</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>34</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Businessman</Achievementname>
+		<Description>Kaufe und verkaufe ein mal Rüben</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>35</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Betrügerischer Fuchs </Achievementname>
+		<Description>Kaufe gefälschte Kunst bei Rainer</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>36</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Musik im Blut</Achievementname>
+		<Description>Besitze 15 Lieder von K.K</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>37</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Legendärer Stuhl</Achievementname>
+		<Description>Erhalte den Froggy Chair</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>38</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ist das noch ein Zimmer?</Achievementname>
+		<Description>Erhalte ein zusammenhängendes Paar von einer geheimen Tapete und einem geheimen Boden von Aziza</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>39</ID>
+		<Category>Shopping</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Investor</Achievementname>
+		<Description>Öffne alle Shops, auf Harveys Insel </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>40</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Frohes neues</Achievementname>
+		<Description>Nehme an der Silvesterparty teil</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>41</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Fast wie in Köln</Achievementname>
+		<Description>Feiere Karneval auf deiner Insel </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>42</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Geburtstagskind</Achievementname>
+		<Description>Feier deinen eigenen Geburtstag </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>43</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Mmh, lecker!</Achievementname>
+		<Description>Bereite beim Schlemmfest einmal alle Rezepte zu.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>44</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Eiersammler</Achievementname>
+		<Description>Sammle am Häschentag mindestens 5 von jeder Sorte Eier.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>45</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Labyrinthprofi</Achievementname>
+		<Description>Schließe das Mai-Feierei Labyrinth ab</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>46</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Museumscon</Achievementname>
+		<Description>Feiere den Internationalen Museumstag</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>47</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Süßes oder Saures</Achievementname>
+		<Description>Nimm am Halloweenfest teil und schenke Jakob ein Bonbon und einen Lolli</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>48</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Huebsche Weihnachten</Achievementname>
+		<Description>Spiele den Spielzeugtag (24.12.) und erhalte das Foto von Chris </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>49</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Butter bei die Fische!</Achievementname>
+		<Description>Gewinne einen Pokal beim Angelturnier</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>50</ID>
+		<Category>Event</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Der Star beim Käferturnier!</Achievementname>
+		<Description>Gewinne einen Pokal beim Käferturnier</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>51</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Verschenken ist besser als nehmen</Achievementname>
+		<Description>Schenke einem Bewohner etwas</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>52</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Hereinspaziert</Achievementname>
+		<Description>Werde von einem Bewohner eingeladen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>53</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Hier, für dich &lt;3</Achievementname>
+		<Description>Erhalte einen gegenstand von einem Bewohner</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>54</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Handwerk muss gelernt sein</Achievementname>
+		<Description>Erhalte eine Anleitung von einem Bewohner </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>55</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Luigis Mansion</Achievementname>
+		<Description>Hilf Buhu dabei seine Seelenfragmente zu finden</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>56</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Brieffreunde!</Achievementname>
+		<Description>Erhalte einen Brief von einem Bewohner</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>57</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Unzertrennlich</Achievementname>
+		<Description>Level 5 Freundschaft mit einem Bewohner</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>58</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Glorreiche Zukunft</Achievementname>
+		<Description>Lasse dir die Zukunft von Smeralda vorhersagen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>59</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Hausparty </Achievementname>
+		<Description>Feiere den Geburtstag von einem Bewohner</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>60</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Mission Meerjungfrau</Achievementname>
+		<Description>Erhalte alle Nixenbastelanleitungen von Johannes</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>61</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Astrologische Instruktionen</Achievementname>
+		<Description>Besitze 5 Anleitungen von Eufemia</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>62</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>mama ist die beste!</Achievementname>
+		<Description>Besitze alle Gegenstände von Mama (bekommt man einfach jeden Monat per Post)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>63</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Jack Frost</Achievementname>
+		<Description>Baue einen perfekten Schneemann</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>64</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Nervige Möwe 1</Achievementname>
+		<Description>Helfe Gulliver bei seinem Problem</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>65</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Nervige Möwe 2</Achievementname>
+		<Description>Helfe Gullivarrr bei seinem Problem</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>66</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Puppenmacher </Achievementname>
+		<Description>Erstelle eine Figur von einem Insekt/Fisch</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>67</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Morgentliches Stretching</Achievementname>
+		<Description>Mache an 3 verschiedenen Tagen Morgen gymnastik</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>68</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Villagercatcher</Achievementname>
+		<Description>Schlage 4 Bewohnern der Insel auf den Kopf mit einem Kescher.  </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>69</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Kammerjäger</Achievementname>
+		<Description>Befreie einen Bewohner von Flöhen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>70</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Modedesigner</Achievementname>
+		<Description>Sorge dafür, dass ein Bewohner dein eigenes Design trägt</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>71</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Steinreich</Achievementname>
+		<Description>Bekomme neun mal am Stück Sternis aus einem Stein </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>72</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Kamm man mal machen</Achievementname>
+		<Description>Tausche deine erste Kammmuschel bei Johannes</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>73</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Perlfekter Anfang</Achievementname>
+		<Description>Bekomm deine erste Perle von Johannes geschenkt</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>74</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Frischer Werbepartner</Achievementname>
+		<Description>Erhalte einen Artikel der Dodo Air Lines fürs Fliegen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>75</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ich muss hier raus...</Achievementname>
+		<Description>Verwende 1x den Resetti-Notrettungsdienst</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>76</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>ue Straßenbande</Achievementname>
+		<Description>Schenke einem deiner Bewohner eine Sturmmaske</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>77</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Hochzeitsplaner</Achievementname>
+		<Description>Hilf Rosina und Björn erfolgreich bei ihren Hochzeitsfotos.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>78</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Klassenfoto</Achievementname>
+		<Description>Mache in Fotopia ein Foto mit allen Inselbewohnern.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>79</ID>
+		<Category>Interaktion</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Eine Bottsfahrt, die ist lustig</Achievementname>
+		<Description>Mache mit Käpten einen Bootsausflug</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>80</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Reverse Berlin 1989</Achievementname>
+		<Description>Baue deinen ersten Zaun </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>81</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Wegen dem Weg</Achievementname>
+		<Description>Erstelle mit dem Inseldesinger einen schönen Weg auf deiner Insel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>82</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Wasserverleger</Achievementname>
+		<Description>Baue einen Teich auf deiner Insel </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>83</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ich mag dich, Plateu-nisch</Achievementname>
+		<Description>Baue ein Plateau und dekoriere es</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>84</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Euler wäre Stolz</Achievementname>
+		<Description>Laufe über deine erster Brücke</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>85</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Jetzt gehts UP</Achievementname>
+		<Description>Laufe deinen ersten Aufgang hoch</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>86</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Geld wächst auf bäumen</Achievementname>
+		<Description>Pflanze einen Sternibaum ein</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>87</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Obst ist gesund!</Achievementname>
+		<Description>Pflanze für jedes Obst einen Baum </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>88</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Bauer sucht... Gemüse</Achievementname>
+		<Description>Pflanze jede Gemüsesorte bei dir an</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>89</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Timi, was ist eine Kulisse?</Achievementname>
+		<Description>Baue dir ein Streaming Zimmer in deinem Haus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>90</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Aus Schwarz werde Gold</Achievementname>
+		<Description>Züchte deine erste goldene Rose, indem du eine schwarze Rose erfolgreich mit einer Goldkanne gießt</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>91</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>1,56% Chance</Achievementname>
+		<Description>Züchte deine erste blaue Rose. Ein konkreter Zuchtweg ist hier beschrieben: *klick*</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>92</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Bausatz Herleiten </Achievementname>
+		<Description>Baue einen Leiterbausatz und bringe ihn an</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>93</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Wann neues 3D Mario</Achievementname>
+		<Description>Platziere zwei Warp röhren und benutze sie</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>94</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Private Kreidezeit</Achievementname>
+		<Description>Platziere auf der Insel (nicht im Museum) ein mindestens 3-Teiliges Fossil </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>95</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Buddle Beat</Achievementname>
+		<Description>Grabe deinen ersten Gyroid aus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>96</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>zweistimmig</Achievementname>
+		<Description>Finde eine Gyroiden-Art in 2 verschiedenen Fraben</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>97</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Musikalische Freunde</Achievementname>
+		<Description>Platziere von jedem Gyroidentypen mindestens einen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>98</ID>
+		<Category>Inselverschonerung</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Gelsenkirchener Uhrenpriester</Achievementname>
+		<Description>Hänge eine Uhr an deine Wand</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>99</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Krankenschwester</Achievementname>
+		<Description>Heile einen Wespenstich mit Medizin</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>100</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>An der Angel</Achievementname>
+		<Description>Angle einen Fisch mit hilfe eines Köders</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>101</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Kleider machen leute</Achievementname>
+		<Description>Erhalte den Sternenstab</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>102</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Boiiing</Achievementname>
+		<Description>Erhalte den Sprungstab</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>103</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Schmackofatz</Achievementname>
+		<Description>Koche ein beliebiges Gericht</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>104</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Meisterkoch</Achievementname>
+		<Description>Koche mindestens 2 süße und 2 herzhafte Rezepte.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>105</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Feinstes Anglerwerkzeug</Achievementname>
+		<Description>Baue eine Goldangel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>106</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Feinstes Fällerwerkzeug</Achievementname>
+		<Description>Baue eine Goldaxt</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>107</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Feinstes Fängerwerkzeug</Achievementname>
+		<Description>Baue einen Goldkescher</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>108</ID>
+		<Category>Crafting</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Feinstes Floristenwerkzeug</Achievementname>
+		<Description>Baue eine Goldkanne</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>109</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Guter Fang!</Achievementname>
+		<Description>Fange deinen ersten Fisch</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>110</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Angehender Entomologe</Achievementname>
+		<Description>Fange dein erstes Insekt</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>111</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Schrecken der Meere</Achievementname>
+		<Description>Fange deinen ersten Fisch vom Typ "Hai" (Sägehai, Hammerhai, Hai, Walhai, Schiffshalter)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>112</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Antiker Eulenblick</Achievementname>
+		<Description>Grabe dein erstes Fossil aus </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>113</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Fossilienkenner</Achievementname>
+		<Description>Kompletiere dein erstes Skelett im Museum</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>114</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>In den Tiefen des Meeres</Achievementname>
+		<Description>Fange dein erstes Meerestier</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>115</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Angelprofi</Achievementname>
+		<Description>Angel 10x hintereinander ohne einen Fisch dabei zu verlieren    </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>116</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Insektensammler</Achievementname>
+		<Description>Fange 20 Insekten ohne die Streak zu brechen.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>117</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Huchensohn</Achievementname>
+		<Description>Fange einen Huchen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>118</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Wen nennst du Glaskopf?</Achievementname>
+		<Description>Fange den Glaskopffisch</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>119</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Du wirst ein größeres Boot brauchen</Achievementname>
+		<Description>Fange den Weißen Hai</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>120</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Steg dich nicht auf</Achievementname>
+		<Description>Fange ALLE (4) Fische, die nur am Steg zu fangen sind (Thunafisch, Marlin, Stachelmakrele, Goldmakrele)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>121</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Rivermonster</Achievementname>
+		<Description>Fange den Arapaima</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>122</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Kommt darunter ihr Quastarde</Achievementname>
+		<Description>Fange den Quastenflosser</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>123</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ist die Flosse oben, wird man dich loben</Achievementname>
+		<Description>Fange alle (6) Fische mit Rückenflosse (Mondfisch, Sägehai, Hammerhai, Weißer Hai, Walhai, Schiffshalter)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>124</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Der Lachs hat beine bekommen</Achievementname>
+		<Description>Fange ALLE (4) Lachse (Masulachs, Lachs, Königslachs, Lachssalmler)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>125</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Fataaler Fischfang</Achievementname>
+		<Description>Fange beide Muränen (Muräne und Nasenmuräne)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>126</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Mein Leben ist erotisch</Achievementname>
+		<Description>Fange das Teleskopauge</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>127</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Gigamäßig</Achievementname>
+		<Description>Schnapp dir die Gigas-Riesenmuschel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>128</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Nosferatu!</Achievementname>
+		<Description>Schnapp dir den Vampirtintenfisch</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>129</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Show me them Legs!</Achievementname>
+		<Description>Schnapp dir die Riesenkrabbe</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>130</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Rassel-Assel</Achievementname>
+		<Description>Schnapp dir die Riesenassel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>131</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Schere ist oben</Achievementname>
+		<Description>Schanpp dir die Languste</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>132</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Außerhalb des Planes</Achievementname>
+		<Description>Schnapp dir die Scotoplanes</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>133</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Es Schmettern die Linge</Achievementname>
+		<Description>Fange alle (15) Schmetterlinge und Motten (Erste 3 spallten)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>134</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ich lieb Ellen (Philosophisch)</Achievementname>
+		<Description>Fange ALLE (4) Liebellen (Feuerliebelle, Königsliebell, Quelljungfer, Wasserfungfer)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>135</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Stumpf ist Trumpf</Achievementname>
+		<Description>Fange ALLE (4) Käfer, die nur auf Stümfen zu fangen sind (Prachtkäfer, Geigenkäfer, Fichtenbock, Alpenbock)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>136</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Golden show.. ähh Hinschauer</Achievementname>
+		<Description>Fange den Goldskarabäus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>137</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Das bin nähmlich ich</Achievementname>
+		<Description>Fange einen Sackträger</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>138</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Duo of Death</Achievementname>
+		<Description>Fange die Vogelspinne und den Skorpion</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>139</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Das Mythologie Trio</Achievementname>
+		<Description>Fange den Herkuleskäfer, den Atlaskäfer und den Goliathkäfer</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>140</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Mantis Mantis</Achievementname>
+		<Description>Fange die Gottesanbeterin und die Orchideenmantis</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>141</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Zicke Zack Zicke Zikade</Achievementname>
+		<Description>Fange allle (6) Zikaden (Braun-, Hyalessa-, Riesen-, Berg- und Abendzikade, sowie die Zikadenlavenhaut)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>142</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>So sieht ein typischer Non-Sub aus</Achievementname>
+		<Description>Finde das Australopithecus Fossil</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>143</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Wie ein 6er im Lotto</Achievementname>
+		<Description>Vervollständige den Diplodocus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>144</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Manni in the House</Achievementname>
+		<Description>Vervollständige das Mammut</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>145</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Hazy Maze Museum</Achievementname>
+		<Description>Vervollständige den Plessiosaurus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>146</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Tote Rivalen</Achievementname>
+		<Description>Vervollständige den T-Rex und den Spinosaurus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>147</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ich heb ab</Achievementname>
+		<Description>Vervollständige den Pteranodon und den Quetzalcoatlus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>148</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Das Wunder vom Stein</Achievementname>
+		<Description>Finde den Bernstein</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>149</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Krabbel King</Achievementname>
+		<Description>Fange alle Insekten</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>150</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Blubber Boss</Achievementname>
+		<Description>Fange alle Fische</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>151</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Meerestier Monarch</Achievementname>
+		<Description>Fange alle Meerestiere</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>152</ID>
+		<Category>Museum</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>So gut wie neu</Achievementname>
+		<Description>Finde alle Fossilien</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>153</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Hey mein alter Freund</Achievementname>
+		<Description>Besuche die insel eines anderen Spielers</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>154</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Friss Sand</Achievementname>
+		<Description>Falle 15 mal hin</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>155</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Pollenflug Ahoi </Achievementname>
+		<Description>Finde ein Möbelstück durch das Schütteln von Bäumen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>156</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Padme, aber bewusstlos</Achievementname>
+		<Description>Lass dich von einer Vogelspinne/Skorpion beißen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>157</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Pfuii Teufel</Achievementname>
+		<Description>Vernichte alle Kakerlaken in deinem Haus (man muss eine lange Zeit nicht spielen/vorspulen)</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>158</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>3 Uhr Nachts Challenge</Achievementname>
+		<Description>Schalte einen Fernseher um 3:33 an </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>159</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Schatzjäger- na ja fast</Achievementname>
+		<Description>Finde beim Angeln 5 Mal Müll</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>160</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Selfie Zeit</Achievementname>
+		<Description>Mach ein Foto mit der In-Game-Kamera</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>161</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Pilzliebhaber</Achievementname>
+		<Description>Sammel alle Pilzarten </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>162</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Wespenschreck </Achievementname>
+		<Description>Benutze einen Partyknaller, um einen Wespenschwarm zu verschäuchen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>163</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Gooner!</Achievementname>
+		<Description>Kaufe dir den Taschentuchspender und stelle ihn neben dein Bett</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>164</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Besuch beim Bürgerbüro</Achievementname>
+		<Description>Gestalte deinen Pass</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>165</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Deutsche Louis Vuitton</Achievementname>
+		<Description>Erweiere dein Inventar auf 40 Plätze</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>166</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Träum was schönes</Achievementname>
+		<Description>Besuche 3 Inseln im Traum</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>167</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Krasse moves</Achievementname>
+		<Description>Schalte 25 Emote frei</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>168</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Fortnite</Achievementname>
+		<Description>Finde eine Flaschenpost</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>169</ID>
+		<Category>Sonstige</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Jetzt wirds feucht</Achievementname>
+		<Description>Springe mit einem Tauchanzug ins Wasser</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>170</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Vivaldis Mietverträge</Achievementname>
+		<Description>Baue mindestens ein Haus in jeder Jahreszeit</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>171</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>WG aus Nächstenliebe</Achievementname>
+		<Description>Lass zwei Bewohner zusammenziehen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>172</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>SCHOKOLADEEE!!!</Achievementname>
+		<Description>Kaufe bei Sigmar eine Schachteln Pralinen und schneke sie einem deine Inselbewohneriund baue ein Ferienhaus für diesen Bewohner </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>173</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Party for all the People</Achievementname>
+		<Description>Nehm am Musikfestival teil</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>174</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Ministerium für Infrastruktur</Achievementname>
+		<Description>Baue alle 5 Einrichtungen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>175</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Lass da mal den Experten ran</Achievementname>
+		<Description>Baue ein Haus auf deiner Insel um</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>176</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>LinkedIn Vollprofi</Achievementname>
+		<Description>Erstelle und beareite dein profil bei der NdsH App</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>177</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Säulen statt heulen</Achievementname>
+		<Description>Baue dir zuhause eine Säule</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>178</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Raumtrenner King</Achievementname>
+		<Description>Erhalte jeweils eine Bastelanleitung für Inseltheken und Säulen</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>179</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Hogwarts für Arme </Achievementname>
+		<Description>Baue die Schule</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>180</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Fine Dining</Achievementname>
+		<Description>Baue das Restaurante</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>181</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Wehe er redet wieder über Siebträgermaschienen</Achievementname>
+		<Description>Baue das Café</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>182</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Schwester Schwester!</Achievementname>
+		<Description>Baue das Krankenhaus</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>183</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Die Optik zählt, ich lüge nicht!</Achievementname>
+		<Description>Baue die Boutique </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>184</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>GZUZ würde den klauen</Achievementname>
+		<Description>Schallte den Poki Bankautomaten frei</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>185</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Sigma für Sigmar</Achievementname>
+		<Description>Kaufe einmal Sigmars komplettes Tagesangebot.</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>186</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Von der Strömung abgekommen</Achievementname>
+		<Description>Finde eine Flaschenpost auf der DLC-Insel</Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+	<Achievement>
+		<ID>187</ID>
+		<Category>DLC</Category>
+		<Difficulty>Leicht</Difficulty>
+		<Achievementname>Animal Crossing New Horizons: Achivement Connaisseur</Achievementname>
+		<Description>Glückwunsch! Du hast die ACNH Platin Trophäe geschafft! </Description>
+		<isCompleted>FALSE</isCompleted>
+		<isFollowing>FALSE</isFollowing>
+	</Achievement>
+</ACAchievements>

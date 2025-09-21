@@ -1,0 +1,47 @@
+body {
+    font-family: 'New Super Mario Font U', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background: #3c395d; 
+}
+
+@font-face {
+    font-family: 'New Super Mario Font U';
+    src: url('fonts/New Super Mario Font U.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Super Mario 64';
+    src: url('fonts/Super Mario 64.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SuperMario256';
+    src: url('fonts/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.achievements-Done{
+	position: absolute;
+	bottom: 620px;
+	font-size: 130px;
+}
+.achievements-DonePercentage{
+	position: absolute;
+	bottom: 400px;
+	font-size: 130px;
+}
+
+.greenscreen-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

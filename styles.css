@@ -1,0 +1,302 @@
+body {
+    font-family: 'FOT-RodinBokutoh Pro EB','New Super Mario Font U', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.Downloadheader{
+	font-size: 15px;
+	cursor: pointer;
+	width: 50px;
+	display: flex;
+    justify-content: flex-start;
+	margin-left: 5px;
+		position:absolute;
+		margin-top: 50px;
+			text-shadow: 1px 2px #000000;
+}
+.Downloadknopf{
+	cursor: pointer;
+	width: 50px;
+	display: flex;
+    justify-content: flex-start;
+	margin-left: 18px;
+		position:absolute;
+}
+
+.Removeheader{
+	font-size: 15px;
+	cursor: pointer;
+	width: 50px;
+	display: flex;
+    justify-content: flex-start;
+	line-height: 20px;
+	margin-left: 98px;
+		position:absolute;
+		margin-top: 55px;
+			text-shadow: 1px 2px #000000;
+}
+.Deleteknopf{
+	position:absolute;
+	cursor: pointer;
+	width: 50px;
+	display: flex;
+    justify-content: flex-start;
+	margin-left: 100px;
+}
+.file-upload-container {	
+	font-size: 15px;
+	line-height: 23px;
+position:absolute;
+	cursor: pointer;
+	width: 50px;
+	display: flex;
+    justify-content: flex-start;
+	margin-left: 174px;
+}
+
+.file-upload-label {
+    display: inline-block;  /* Macht das Label klickbar */
+    cursor: pointer;  /* Zeigt den Mauszeiger an, dass es klickbar ist */
+		text-shadow: 1px 2px #000000;
+}
+
+.file-upload-icon {
+    width: 50px;  /* Größe des Icons anpassen */
+    height: 50px;  /* Größe des Icons anpassen */
+}
+
+
+
+
+
+
+
+
+
+.background {
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    width: 105vw;
+    height: 105vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: 'FOT-RodinBokutoh Pro EB';
+    src: url('fonts/FOT-RodinBokutoh Pro EB.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'New Super Mario Font U';
+    src: url('fonts/New Super Mario Font U.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Super Mario 64';
+    src: url('fonts/Super Mario 64.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SuperMario256';
+    src: url('fonts/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(244, 241, 228, 1);
+    color: #fff;
+	text-shadow: 1px 2px #000000;
+}
+
+.header-icon {
+    width: 360px;
+    margin-right: 25px;
+	cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #cba260;
+    text-decoration: none;
+    text-align: center;
+	font-size: 19px;
+}
+
+nav a img {
+    display: block;
+    width: 70px;
+    margin: 0 auto 5px;
+}
+
+.kingdom-header {
+    text-align: center;
+    margin: 20px 0;
+		text-shadow: 1px 4px #000000;
+	color: white;
+}
+
+.kingdom-logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.sort-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+	margin-left: 110px;
+	text-shadow: 1px 2px #000000;
+	color: white;
+}
+
+.sort-options label {
+    margin-right: 15px;
+	font-size: 20px;
+}
+
+.sort-options select {
+    padding: 3px;
+	margin-right: 60px;
+}
+
+#achievement-list {
+    width: 90%;
+    max-width: 1475px;
+    max-height: 50vh; /* Begrenzung auf 80% der Bildschirmhöhe */
+    overflow-y: auto; /* Scrollen aktivieren */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    color: #ffffff;
+    text-shadow: 1px 2px #000000;
+}
+
+/* Stil für die Einträge */
+.achievement-item {
+    display: flex;
+    align-items: flex-start; /* Startet Inhalte oben, falls Text umbrochen wird */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap; /* Ermöglicht Umbruch innerhalb des Eintrags */
+}
+.achievement-item a{
+	color: #ffffff;
+		cursor: not-allowed;
+}
+
+.achievement-item:last-child {
+    border-bottom: none;
+}
+
+/* Feste Breiten für die einzelnen Spalten */
+.achievement-id,
+.achievement-category,
+.achievement-difficulty,
+.achievement-name,
+.achievement-description {
+    width: 150px; /* Feste Breite */
+    max-width: 150px; /* Maximale Breite vor Zeilenumbruch */
+    word-wrap: break-word; /* Zeilenumbruch bei langen Wörtern */
+    white-space: normal; /* Text darf in die nächste Zeile brechen */
+    padding: 5px;
+    box-sizing: border-box;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.achievement-description {
+	margin-right: 30px;
+    width: 270px; /* Feste Breite */
+    max-width: 270px; /* Maximale Breite vor Zeilenumbruch */
+}
+
+.achievement-name{
+	color: #fff;
+	border-left: 6px solid #c6c670;
+    width: 200px; /* Feste Breite */
+    max-width: 200px; /* Maximale Breite vor Zeilenumbruch */
+}
+.achievement-description{
+	color: #fff;
+	border-left: 6px solid #37a1c6;
+}
+
+.achievement-category{
+	text-align: center;
+	align-items: center;
+	margin-left: -10px;
+}
+
+
+.achievement-id img{
+    width: 80px; /* Adjust the size of icons here */
+    height: 80px; /* Ensure width and height are the same for a square icon */
+    margin-right: 80px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
+
+.achievement-difficulty img {
+    width: 50px; /* Adjust the size of icons here */
+    height: 50px; /* Ensure width and height are the same for a square icon */
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
+
+.achievement-category img{
+    width: 80px; /* Adjust the size of icons here */
+    height: 80px; /* Ensure width and height are the same for a square icon */
+    margin-right: 105px; /* Space between icon and text */
+	margin-left: 30px; /* Space between icon and text */  
+	align-items: center;
+}
+
+/* Zusätzlicher Stil für Labels und Checkboxen */
+.toggle,
+.toggle2,
+.toggle3 {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.toggle3,
+.toggle{
+cursor: pointer;
+}
+
+.toggle2 {
+	cursor: not-allowed;
+}
+
+
+

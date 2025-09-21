@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMO Achievements - All Kingdoms</title>
+    <link rel="icon" href="stars/StarRainbow.png"> <!-- Favicon im Tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link zur separaten CSS-Datei -->
+</head>
+<body>
+    <header>
+        <img src="images/SMOAchievementsLogo.png" onclick="window.location.href='index.html'" alt="Website Icon" class="header-icon">
+        <nav>
+            <ul>
+                <li><a href="insel_progress.html"><img src="images/InselProgress.png" alt="Cap Kingdom">Insel Progress</a></li>
+                <li><a href="mode_design.html"><img src="images/Mode.png" alt="Cascade Kingdom">Mode/Design</a></li>
+				<li><a href="shopping.html"><img src="images/Shopping.png" alt="Shopping Img">Shopping</a></li>
+				<li><a href="feierei_event.html"><img src="images/Event.png" alt="Lake Kingdom">Events</a></li>
+				<li><a href="interaktion.html"><img src="images/Interaktion.png" alt="Wooded Kingdom">Interaktionen</a></li>
+				<li><a href="inselverschonerung.html"><img src="images/Inselverschonerung.png" alt="Cloud Kingdom">Inselverschönerung</a></li>
+				<li><a href="crafting.html"><img src="images/Crafting.png" alt="Lost Kingdom">Crafting</a></li>
+				<li><a href="museum.html"><img src="images/Museum.png" alt="Metro Kingdom">Museum</a></li>
+				<li><a href="sonstige.html"><img src="images/Sonstige.png" alt="Snow Kingdom">Sonstiges</a></li>
+				<li><a href="dlc.html"><img src="images/DLC.png" alt="Seaside Kingdom">DLC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="background" src="backgrounds/AllKingdom.png" style="filter: brightness(90%) blur(0px)">
+        <div class="kingdom-header">
+			<img class="Downloadknopf" src="images/Downloadicon.png" alt="Download Icon">
+			<figcaption class="Downloadheader">Download</figcaption>
+			
+			<img class="Deleteknopf" src="images/Deleteicon.png" alt="Delete Icon">
+			<figcaption class="Removeheader">Delete List</figcaption>
+		 
+			<div class="file-upload-container">
+				<label for="fileInput" class="file-upload-label">
+					<img class="file-upload-icon" src="images/UploadIcon.png" alt="Upload Icon">
+					<figcaption class="file-upload-text">Upload</figcaption>
+				</label>
+				<input type="file" id="fileInput" style="display: none;" />
+			</div>
+		 
+            <img src="images/Mode.png" alt="Mode" class="kingdom-logo">
+            <h1>Mode Achievements</h1>
+        </div>
+
+        <!-- Sortierung Dropdowns -->
+        <div class="sort-options">
+            <label for="sort-id">Sort by ID:</label>
+            <select id="sort-id">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            
+            <label for="sort-difficulty">Sort by Difficulty:</label>
+            <select id="sort-difficulty">
+                <option value="leicht">leicht</option>
+                <option value="mittel">mittel</option>
+                <option value="schwer">schwer</option>
+                <option value="extrem">extrem</option>
+                <option value="kaizo">kaizo</option>
+            </select>
+
+            <label for="sort-complete">Sort by Completion:</label>
+            <select id="sort-complete">
+                <option value="true">Complete First</option>
+                <option value="false">Incomplete First</option>
+            </select>
+        </div>
+
+        <section id="achievement-list">
+            <!-- Achievements will be dynamically loaded here -->
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- Link zur separaten JavaScript-Datei -->
+</body>
+</html>

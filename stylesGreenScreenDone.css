@@ -1,0 +1,158 @@
+body {
+    font-family: 'FOT-RodinBokutoh Pro EB','New Super Mario Font U', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background: #3c395d; 
+}
+
+
+@font-face {
+    font-family: 'FOT-RodinBokutoh Pro EB';
+    src: url('fonts/FOT-RodinBokutoh Pro EB.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'New Super Mario Font U';
+    src: url('fonts/New Super Mario Font U.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Super Mario 64';
+    src: url('fonts/Super Mario 64.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SuperMario256';
+    src: url('fonts/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.greenscreen-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.difficulty-done{
+    width: 90px; /* Vergrößertes Icon */
+    height: 90px; /* Vergrößertes Icon */
+    position: fixed;
+    margin-top: -7px;
+}
+
+
+/* Trennstrich */
+hr {
+    width: 100%; /* Breitere Trennlinie */
+    border: 1px solid #fff;
+    margin: 5px 0;
+}
+
+/* Beschreibung des Achievements */
+
+
+/*--------------------------------*/
+.achievement-box-Complete {
+    position: relative;
+    top: -75%;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 60px; /* Vergrößerter Innenabstand */
+    border-radius: 30px;
+    width: 1500px; /* Breitere Box */
+    display: flex; /* Flexbox, um das Icon und den Text nebeneinander zu platzieren */
+    align-items: flex-start; /* Ausrichtung des Texts relativ zum Icon */
+	
+	background-image: url('images/Sprite-0004.png');
+	box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.achievement-icon-Complete {
+    width: 330px; /* 3x größere Breite des Icons */
+    height: 330px; /* 3x größere Höhe des Icons */
+    margin-right: 60px; /* Größerer Abstand zwischen Icon und Text */
+}
+
+.stamp-image {
+    position: absolute;
+    top: 0; /* Startposition des Stempels */
+    right: 0; /* Stempelt das Bild relativ zur rechten Seite der Box */
+    transform: rotate(-45deg); /* Schräg stellen des Bildes */
+    width: 360px; /* 3x größere Größe des Stempels */
+    height: 360px;
+    opacity: 0; /* Anfänglich unsichtbar */
+    pointer-events: none; /* Das Bild blockiert keine Klicks */
+    z-index: 10; /* Sicherstellen, dass das Bild über dem alten Icon liegt */
+    transition: all 1s ease; /* Animationsgeschwindigkeit */
+}
+
+.achievement-Complete {
+    display: flex;
+    align-items: flex-start; /* Vertikale Ausrichtung von Icon und Text (oben ausgerichtet) */
+    width: 100%;
+}
+
+.achievement-details-Complete {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Text wird oben ausgerichtet */
+    text-align: left; /* Text links ausrichten */
+    width: 100%;
+}
+
+.achievement-name-Complete {
+	line-height: 70px;
+    margin-bottom: 20px; /* Weniger Abstand nach oben */
+    font-size: 72px; /* 3x größere Schriftgröße für den Titel */
+    font-weight: bold;
+    margin-top: 3px; /* Weniger Abstand nach oben */
+    text-align: center;
+    overflow: hidden;
+    max-width: 1020px; /* Angepasst für die größere Box */
+	text-shadow: 1px 2px #000000;
+	color: #c6c670;
+}
+
+.achievement-description-Complete {
+    font-size: 42px; /* 3x größere Schriftgröße für die Beschreibung */
+	text-shadow: 1px 2px #000000;
+	
+}
+
+
+#color-picker-label{
+	position: absolute;
+	bottom: 75px;
+	right: 60px;
+}
+#color-picker-label2{
+	position: absolute;
+	bottom: 35px;
+	right: 60px;
+}
+
+#color-picker-label3{
+	position: absolute;
+	bottom: 115px;
+	right: 60px;
+}
+#colorreset{
+	position: absolute;
+	bottom: 155px;
+	right: 60px;
+}
+#moondisenable{
+	position: absolute;
+	bottom: 185px;
+	right: 60px;
+}
