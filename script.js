@@ -20,9 +20,7 @@ setInterval(() => {
 }, 10000); // 60000 ms = 1 Minute
 
 async function CheckAllCheckboxes() {
-    if (!finishedRenderingList) return; // nur ausführen, wenn die Liste fertig gerendert ist
-
-    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub";
+    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub"; // public URL vom Google Doc
 
     try {
         const response = await fetch(docUrl);
@@ -30,30 +28,24 @@ async function CheckAllCheckboxes() {
 
         const docText = await response.text();
 
-        // HTML in temporäres Element einfügen
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = docText;
+        // Entferne Zeilenumbrüche und Leerzeichen, dann split nach Komma
+        const entries = docText.replace(/\s+/g, "").split(",");
 
-        // Alle <p> oder <span> Elemente holen und nur den Text
-        const docLines = Array.from(tempDiv.querySelectorAll("p span"))
-            .map(el => el.textContent.trim())
-            .filter(line => line.includes(":"));
+        entries.forEach((entry, index) => {
+            if (!entry.includes(":")) return; // Skip invalid
 
-        // Über alle Zeilen iterieren und achievements updaten
-        docLines.forEach((line, index) => {
-            const [idStr, boolStr] = line.split(":");
+            const [idStr, boolStr] = entry.split(":");
             const id = parseInt(idStr, 10);
             const value = boolStr.toLowerCase() === "true";
 
             const achievement = achievementsData.find(a => a.id === id);
             if (achievement) {
-                achievement.isCompleted = value;
-
+                achievement.isCompleted = value; // updaten
                 const cb = document.querySelector(`.toggle[data-id='${id}']`);
                 if (cb) cb.checked = value;
             }
 
-            // Die ersten 10 IDs in der Konsole ausgeben
+            // Ausgabe der ersten 10
             if (index < 10) {
                 console.log(`ID: ${id}, isCompleted: ${value}`);
             }
@@ -63,6 +55,7 @@ async function CheckAllCheckboxes() {
         console.error("Fehler beim Verarbeiten des Docs:", error);
     }
 }
+
 
 
 
