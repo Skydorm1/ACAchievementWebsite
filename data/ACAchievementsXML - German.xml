@@ -15,7 +15,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Ein Neuanfang</Achievementname>
 		<Description>Zahle dein Grundstück zum ersten Mal ab. Jetzt kann es losgehen!</Description>
-		<isCompleted>FALSE</isCompleted>
+		<isCompleted>TRUE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -1685,4 +1685,5 @@
 	</Achievement>
 
 </ACAchievements>
+
 
