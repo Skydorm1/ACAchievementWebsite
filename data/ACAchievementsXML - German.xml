@@ -33,7 +33,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>K.K. Tourstopp </Achievementname>
 		<Description>Erhalte 3 Sterne Bewertung für deine Insel und hör dir das erste Konzert von K.K. an</Description>
-		<isCompleted>FALSE</isCompleted>
+		<isCompleted>TRUE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -1685,6 +1685,7 @@
 	</Achievement>
 
 </ACAchievements>
+
 
 
 
