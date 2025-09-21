@@ -1,10 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    loadFromIndexedDB(); // Versuchen, Daten aus IndexedDB zu laden
     setupSortListeners();
-    document.querySelector(".Downloadknopf").addEventListener("click", downloadXML);
-    document.querySelector("#fileInput").addEventListener("change", handleFileUpload); // Datei-Upload
-    document.querySelector(".Deleteknopf").addEventListener("click", deleteIndexedDB);
-	
 });
 
 function disableToggle(){
@@ -12,78 +7,8 @@ function disableToggle(){
     event.preventDefault(); 
 }
 
-function deleteIndexedDB() {
-    // Zeige Bestätigungs-Popup
-    const confirmed = confirm("Do you want to DELETE the current Database?");
-
-    if (confirmed) {
-        // Wenn der Benutzer bestätigt hat, lösche die Datenbank
-        const request = indexedDB.deleteDatabase("AchievementsDB");
-
-            const achievementList = document.getElementById("achievement-list");
-            achievementList.innerHTML = "";
-
-        request.onerror = function() {
-            console.log("Error deleting Database");
-        };
-		
-		location.reload();
-		updateGreenscreenData();
-		
-    } else {
-        console.log("Deletion canceled.");
-    }
-}
-
 
 let achievementsData = [];
-
-// Funktion zum Verarbeiten des Datei-Uploads
-function handleFileUpload(event) {
-    const file = event.target.files[0];
-    if (file && file.type === "text/xml") {
-        const reader = new FileReader();
-        reader.onload = function() {
-            const xmlData = reader.result;
-            //loadAchievementsFromXML(xmlData);
-        };
-        reader.readAsText(file);
-    } else {
-        alert("Upload Valid XML-File");
-    }
-}
-
-// Funktion zum Laden von Erfolgen aus einer XML-Datei
-/*function loadAchievementsFromXML(xmlData) {
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(xmlData, "application/xml");
-    const achievements = xml.getElementsByTagName("Achievement");
-
-    achievementsData = Array.from(achievements).map(achievement => {
-        const category = achievement.getElementsByTagName("Category")[0].textContent;
-        const difficulty = achievement.getElementsByTagName("Difficulty")[0].textContent.toLowerCase();
-        const id = parseInt(achievement.getElementsByTagName("ID")[0].textContent);
-        const name = achievement.getElementsByTagName("Achievementname")[0].textContent;
-        const description = achievement.getElementsByTagName("Description")[0].textContent;
-        const isCompleted = achievement.getElementsByTagName("isCompleted")[0].textContent === "TRUE";
-		const isFollowing = achievement.getElementsByTagName("isFollowing")[0].textContent === "TRUE";
-
-        return {
-            category,
-            difficulty,
-            id,
-            name,
-            description,
-            isCompleted,
-			isFollowing
-        };
-    });
-
-    filterByKingdom();
-    saveToIndexedDB(); // Speichern der Daten in IndexedDB
-	
-	updateGreenscreenData();
-}*/
 
 // Lade einmal beim Start
 loadAchievementsFromXMLRepo();
@@ -279,29 +204,6 @@ function createXMLDocument() {
     return xmlDoc;
 }
 
-// Funktion zum Herunterladen der XML-Daten
-function downloadXML() {
-	const confirmed = confirm("Are you sure you wanna download the current Database?");
-
-    if (confirmed) {
-    const xmlDoc = createXMLDocument();
-    const serializer = new XMLSerializer();
-    const xmlString = serializer.serializeToString(xmlDoc);
-
-    const blob = new Blob([xmlString], { type: "application/xml" });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "ACAchievements.xml";
-    link.click();
-    URL.revokeObjectURL(link.href);
-	
-    } else {
-        console.log("Download canceled.");
-    }
-	
-   
-}
-
 function saveToIndexedDB() {
     const request = indexedDB.open("AchievementsDB", 1);
 
@@ -328,37 +230,6 @@ function saveToIndexedDB() {
 
     request.onerror = function(event) {
         console.log("Fehler beim Speichern der Erfolge in IndexedDB:", event);
-    };
-}
-
-// Funktion zum Laden der Daten aus IndexedDB
-function loadFromIndexedDB() {
-    const request = indexedDB.open("AchievementsDB", 1);
-
-    request.onupgradeneeded = function(event) {
-        const db = event.target.result;
-        if (!db.objectStoreNames.contains("achievements")) {
-            db.createObjectStore("achievements", { keyPath: "id" });
-        }
-    };
-
-    request.onsuccess = function(event) {
-        const db = event.target.result;
-        const transaction = db.transaction("achievements", "readonly");
-        const store = transaction.objectStore("achievements");
-
-        const allAchievementsRequest = store.getAll();
-        allAchievementsRequest.onsuccess = function() {
-            achievementsData = allAchievementsRequest.result;
-            if (achievementsData.length > 0) {
-                filterByKingdom()
-            }
-			updateGreenscreenData();
-        };
-    };
-
-    request.onerror = function(event) {
-        console.log("Fehler beim Laden der Erfolge aus IndexedDB:", event);
     };
 }
 
@@ -489,7 +360,17 @@ function renderAchievements(achievements) {
         `;
         achievementList.appendChild(item);
     });
-	document.querySelectorAll('.toggle, .toggle3').forEach(cb => cb.disabled = true);
+	document.querySelectorAll('.toggle').forEach(cb => {
+        const achievement = achievementsData.find(a => a.id === parseInt(cb.dataset.id, 10));
+        if (achievement) cb.checked = achievement.isCompleted;
+        cb.disabled = true; // falls du sie deaktivieren willst
+    });
+
+    document.querySelectorAll('.toggle3').forEach(cb => {
+        const achievement = achievementsData.find(a => a.id === parseInt(cb.dataset.id, 10));
+        if (achievement) cb.checked = achievement.isFollowing;
+        cb.disabled = true; // falls du sie deaktivieren willst
+    });
 }
 
 // Funktion für die Sortier-Listener
