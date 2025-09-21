@@ -31,25 +31,28 @@ async function CheckAllCheckboxes() {
         // Entferne Zeilenumbrüche und Leerzeichen, dann split nach Komma
         const entries = docText.replace(/\s+/g, "").split(",");
 
-        entries.forEach((entry, index) => {
-            if (!entry.includes(":")) return; // Skip invalid
+entries.forEach((entry, index) => {
+    entry = entry.trim();
+    if (!entry || !entry.includes(":")) return; // Skip empty/invalid
 
-            const [idStr, boolStr] = entry.split(":");
-            const id = parseInt(idStr, 10);
-            const value = boolStr.toLowerCase() === "true";
+    const [idStr, boolStr] = entry.split(":");
+    const id = parseInt(idStr, 10);
+    if (isNaN(id)) return; // Skip invalid ID
 
-            const achievement = achievementsData.find(a => a.id === id);
-            if (achievement) {
-                achievement.isCompleted = value; // updaten
-                const cb = document.querySelector(`.toggle[data-id='${id}']`);
-                if (cb) cb.checked = value;
-            }
+    const value = boolStr.toLowerCase() === "true";
 
-            // Ausgabe der ersten 10
-            if (index < 10) {
-                console.log(`ID: ${id}, isCompleted: ${value}`);
-            }
-        });
+    const achievement = achievementsData.find(a => a.id === id);
+    if (achievement) {
+        achievement.isCompleted = value;
+        const cb = document.querySelector(`.toggle[data-id='${id}']`);
+        if (cb) cb.checked = value;
+    }
+
+    if (index < 10) {
+        console.log(`ID: ${id}, isCompleted: ${value}`);
+    }
+});
+
 
     } catch (error) {
         console.error("Fehler beim Verarbeiten des Docs:", error);
