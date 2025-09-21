@@ -18,7 +18,7 @@ loadAchievementsFromGist();
 setInterval(() => {
     //loadAchievementsFromXMLRepo();
 	loadAchievementsFromGist();
-}, 10000); // 60000 ms = 1 Minute
+}, 4000); // 60000 ms = 1 Minute
 
 async function loadAchievementsFromGist() {
     const gistId = "eb319ba0c431d3a033ce578eb4117981"; // Deine Gist-ID
@@ -33,7 +33,8 @@ async function loadAchievementsFromGist() {
         const rawUrl = gistData.files[fileName].raw_url;
 
         // 2. Raw-Content abrufen
-        const rawResponse = await fetch(rawUrl);
+        const rawResponse = await fetch(rawUrl + `?t=${Date.now()}`, { cache: "no-store" });
+
         if (!rawResponse.ok) throw new Error("Fehler beim Laden der XML-Datei vom Gist");
 
         const xmlText = await rawResponse.text();
@@ -109,11 +110,6 @@ function CheckAllCheckboxes() {
 
         if (achievement) {
             cb.checked = achievement.isCompleted;
-            
-            // Die ersten 10 Einträge in der Konsole ausgeben
-            if (index < 10) {
-                console.log(`ID: ${achievement.id}, isCompleted: ${achievement.isCompleted}`);
-            }
         }
     });
 }
