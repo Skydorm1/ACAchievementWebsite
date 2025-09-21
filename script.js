@@ -11,7 +11,8 @@ function disableToggle(){
 let achievementsData = [];
 
 // Lade einmal beim Start
-loadAchievementsFromXMLRepo();
+//loadAchievementsFromXMLRepo();
+loadAchievementsFromGoogleDoc();
 
 // Rufe die Funktion jede Minute (60000 ms) erneut auf
 setInterval(() => {
