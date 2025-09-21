@@ -26,7 +26,15 @@ async function CheckAllCheckboxes() {
         const response = await fetch(docUrl);
         if (!response.ok) throw new Error("Fehler beim Laden des Docs");
 
-        const docText = await response.text();
+        const htmlText = await response.text(); // <-- wichtig
+
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = htmlText;
+
+        // Alle <p> und <span> Elemente zusammenfassen
+        const docText = Array.from(tempDiv.querySelectorAll("p, span"))
+                             .map(el => el.textContent)
+                             .join("\n");
 
         // Alle Einträge splitten nach Komma oder Zeilenumbruch
         const entries = docText.split(/[\n,]+/);
@@ -57,6 +65,7 @@ async function CheckAllCheckboxes() {
         console.error("Fehler beim Verarbeiten des Docs:", error);
     }
 }
+
 
 
 
