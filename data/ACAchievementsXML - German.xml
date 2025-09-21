@@ -6,7 +6,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>*Prrt Prrt* Nook ruft an!</Achievementname>
 		<Description>Schließe das "Tutorial" ab und erhalte die erste Rechnung von Tom Nook</Description>
-		<isCompleted>FALSE</isCompleted>
+		<isCompleted>TRUE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -1685,3 +1685,4 @@
 	</Achievement>
 
 </ACAchievements>
+
