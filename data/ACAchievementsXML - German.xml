@@ -6,7 +6,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>*Prrt Prrt* Nook ruft an!</Achievementname>
 		<Description>Schließe das "Tutorial" ab und erhalte die erste Rechnung von Tom Nook</Description>
-		<isCompleted>TRUE</isCompleted>
+		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -15,7 +15,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Ein Neuanfang</Achievementname>
 		<Description>Zahle dein Grundstück zum ersten Mal ab. Jetzt kann es losgehen!</Description>
-		<isCompleted>TRUE</isCompleted>
+		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -24,7 +24,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Es wird besser</Achievementname>
 		<Description>Erhalte die 2 Sterne für deine Insel</Description>
-		<isCompleted>TRUE</isCompleted>
+		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -33,7 +33,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>K.K. Tourstopp </Achievementname>
 		<Description>Erhalte 3 Sterne Bewertung für deine Insel und hör dir das erste Konzert von K.K. an</Description>
-		<isCompleted>TRUE</isCompleted>
+		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -42,7 +42,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Fast da!</Achievementname>
 		<Description>Erhalte die 4 Sterne Bewertung für deine Insel</Description>
-		<isCompleted>TRUE</isCompleted>
+		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -186,7 +186,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Nie allein</Achievementname>
 		<Description>Designe ein UE-Tshirt (Muster Erstellen, können dann auch andere downloaden)</Description>
-		<isCompleted>TRUE</isCompleted>
+		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -1683,10 +1683,4 @@
 		<isCompleted>FALSE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
-
 </ACAchievements>
-
-
-
-
-
