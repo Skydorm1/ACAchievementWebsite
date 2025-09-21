@@ -42,7 +42,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Fast da!</Achievementname>
 		<Description>Erhalte die 4 Sterne Bewertung für deine Insel</Description>
-		<isCompleted>FALSE</isCompleted>
+		<isCompleted>TRUE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -1685,6 +1685,7 @@
 	</Achievement>
 
 </ACAchievements>
+
 
 
 
