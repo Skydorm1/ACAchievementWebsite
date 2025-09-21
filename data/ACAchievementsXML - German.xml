@@ -24,7 +24,7 @@
 		<Difficulty>Leicht</Difficulty>
 		<Achievementname>Es wird besser</Achievementname>
 		<Description>Erhalte die 2 Sterne für deine Insel</Description>
-		<isCompleted>FALSE</isCompleted>
+		<isCompleted>TRUE</isCompleted>
 		<isFollowing>FALSE</isFollowing>
 	</Achievement>
 	<Achievement>
@@ -1685,5 +1685,6 @@
 	</Achievement>
 
 </ACAchievements>
+
 
 
