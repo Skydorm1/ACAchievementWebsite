@@ -20,51 +20,47 @@ setInterval(() => {
 }, 6000); // 60000 ms = 1 Minute
 
 async function CheckAllCheckboxes() {
-    const docUrl = "https://docs.google.com/document/d/e/2PACX-1vQSC37g3q--8qmF6PtLMzYgaoFqefpAv4KlIpTyxL8U-7xJQAaH7PgfSE1zyY7EJ-ykrA0t4CgFj36v/pub";
+    const docUrl = "https://pastebin.com/raw/j8t0sNh1";
 
     try {
-        const response = await fetch(docUrl + `?t=${Date.now()}`, { cache: "no-store" });
+        const response = await fetch(docUrl, { cache: "no-store" }); // verhindert Caching
         if (!response.ok) throw new Error("Fehler beim Laden des Docs");
 
-        const htmlText = await response.text(); // <-- wichtig
+        const docText = await response.text();
 
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = htmlText;
+        // Jede Zeile trimmen und leere Zeilen ignorieren
+        const lines = docText.split("\n")
+                             .map(line => line.trim())
+                             .filter(line => line.includes(":"));
 
-        // Alle <p> und <span> Elemente zusammenfassen
-        const docText = Array.from(tempDiv.querySelectorAll("p, span"))
-                             .map(el => el.textContent)
-                             .join("\n");
-
-        // Alle Einträge splitten nach Komma oder Zeilenumbruch
-        const entries = docText.split(/[\n,]+/);
-
-        entries.forEach((entry, index) => {
-            entry = entry.trim();
-            if (!entry || !entry.includes(":")) return; // skip empty/invalid
-
-            const [idStr, boolStr] = entry.split(":");
+        lines.forEach((line, index) => {
+            const [idStr, boolStr] = line.split(":");
             const id = parseInt(idStr, 10);
             if (isNaN(id)) return;
 
             const value = boolStr.trim().toLowerCase() === "true";
 
+            // Achievement aktualisieren
             const achievement = achievementsData.find(a => a.id === id);
             if (achievement) {
                 achievement.isCompleted = value;
+
+                // Checkbox auf der Seite aktualisieren
                 const cb = document.querySelector(`.toggle[data-id='${id}']`);
                 if (cb) cb.checked = value;
             }
 
+            // Die ersten 10 Einträge ausgeben
             if (index < 10) {
                 console.log(`ID: ${id}, isCompleted: ${value}`);
             }
         });
 
     } catch (error) {
-        console.error("Fehler beim Verarbeiten des Docs:", error);
+        console.error("Fehler beim Verarbeiten der Pastebin-Daten:", error);
     }
 }
+
 
 
 
